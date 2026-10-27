@@ -1,0 +1,14 @@
+{
+  "name": "food-ordering-lab",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "node server/server.js",
+    "build": "npm run build --prefix client",
+    "test": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
